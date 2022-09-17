@@ -28,7 +28,6 @@ interface Car {
 interface Binar {
   listCars(filterer: (car: Car) => boolean): Array<Car>
 }
-```
 
 Method `listCars` ini akan menerima fungsi yang mana harus mengembalikan `boolean` sebagai nilainya. 
 Fungsi ini akan dijalankan untuk masing-masing item di dalam list of cars, yang mana jika nilainya `true`,
@@ -37,3 +36,15 @@ maka akan ditampilkan di dalam list tersebut.
 # Tips
 
 Just, hack it bro!
+
+BINAR_Studpen_CH4_Challenge4
+
+Ini adalah tugas challenge BINAR Studpen Chapter 4
+
+Catatan uuntuk running app :
+
+1. Download / clone dan ekstrak zip file jika download as zip
+2. Jalankan npm install pada directory project
+3. Jalankan npm start pada directory project
+4. Buka url http://localhost:3000
+
