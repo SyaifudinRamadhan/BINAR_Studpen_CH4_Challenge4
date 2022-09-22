@@ -62,14 +62,14 @@ document.onkeydown = evt => {
 // Showing skeleton template
 let objSetView = new SkeletonTemplate('result-part');
 objSetView.genTemplate();
-objSetView.setView(8);
+// objSetView.setView(8);
 
-let dataViews = JSON.parse(cars);
-console.log(dataViews);
-let objSetViewContent = new ContentTemplate(dataViews, 'result-part');
-setTimeout(() => {
-    objSetViewContent.setView();
-}, 300);
+// let dataViews = JSON.parse(cars);
+// console.log(dataViews);
+let objSetViewContent = new ContentTemplate({}, 'result-part');
+// setTimeout(() => {
+//     objSetViewContent.setView();
+// }, 300);
 
 // Filterinng search
 document.getElementById('search-now').addEventListener('click', () => {

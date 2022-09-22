@@ -6,15 +6,10 @@ const homepage = (response) => {
         layout : 'layouts/main-layout',
     });
 }
-const explore = async(response) => {
-    let JSONData;
-    
-    JSONData = await fs.readFile('./data/cars.json', 'utf-8');
-
+const explore = (response) => {
     response.render('car-search', {
         title : 'BINAR Rent Car | Explore',
         layout : 'layouts/main-layout',
-        cars : JSON.stringify(JSON.parse(JSONData)), 
     });
 }
 
